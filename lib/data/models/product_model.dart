@@ -1,4 +1,6 @@
-class ProductModel {
+import 'package:equatable/equatable.dart';
+
+class ProductModel extends Equatable {
   final int id;
 
   String? title;
@@ -44,9 +46,20 @@ class ProductModel {
         'image': image,
         'rating': rating?.toJson(),
       };
+
+  @override
+  List<Object?> get props => [
+        id,
+        title,
+        price,
+        description,
+        category,
+        image,
+        rating,
+      ];
 }
 
-class Rating {
+class Rating extends Equatable {
   num? rate;
   int? count;
 
@@ -71,4 +84,10 @@ class Rating {
         'rate': rate,
         'count': count,
       };
+
+  @override
+  List<Object?> get props => [
+        rate,
+        count,
+      ];
 }
