@@ -5,7 +5,7 @@ import 'package:get_it/get_it.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../features/favourites/services/favorites_caching_service.dart';
+import '../features/favorites/services/favorites_caching_service.dart';
 
 final GetIt getIt = GetIt.instance;
 
