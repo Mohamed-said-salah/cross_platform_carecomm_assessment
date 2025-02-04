@@ -38,8 +38,9 @@ class FavoritesCachingService {
       return null;
     }
 
+    List<dynamic> productsList = jsonDecode(productsJson) as List<dynamic>;
     List<Map<String, dynamic>> productsMap =
-        jsonDecode(productsJson) as List<Map<String, dynamic>>;
+        productsList.cast<Map<String, dynamic>>();
 
     List<ProductModel> products =
         productsMap.map((product) => ProductModel.fromJson(product)).toList();
@@ -69,13 +70,17 @@ class FavoritesCachingService {
   /// Returns a `Future` containing the favorite product with the given ID, or
   /// `null` if the cache is empty or no product with the given ID is found.
   Future<ProductModel?> getFavoriteProductById(int productId) async {
-    List<ProductModel?>? products = await _readFavoriteProductsFromCache();
+    List<ProductModel>? products = await _readFavoriteProductsFromCache();
 
     if (products == null) {
       return null;
     }
 
-    return products.firstWhere((p) => p?.id == productId, orElse: () => null);
+    try {
+      return products.firstWhere((p) => p.id == productId);
+    } catch (e) {
+      return null;
+    }
   }
 
   /// Removes the given product from the list of favorite products in the cache.
