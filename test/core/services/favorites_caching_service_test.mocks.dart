@@ -5,7 +5,7 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'dart:async' as _i4;
 
-import 'package:cross_platform_product_listing_assessment/core/cache_manager.dart'
+import 'package:cross_platform_product_listing_assessment/core/services/cache_manager.dart'
     as _i3;
 import 'package:mockito/mockito.dart' as _i1;
 import 'package:shared_preferences/shared_preferences.dart' as _i2;
@@ -27,7 +27,7 @@ import 'package:shared_preferences/shared_preferences.dart' as _i2;
 class _FakeSharedPreferences_0 extends _i1.SmartFake
     implements _i2.SharedPreferences {
   _FakeSharedPreferences_0(Object parent, Invocation parentInvocation)
-    : super(parent, parentInvocation);
+      : super(parent, parentInvocation);
 }
 
 /// A class which mocks [CacheManager].
@@ -39,23 +39,19 @@ class MockCacheManager extends _i1.Mock implements _i3.CacheManager {
   }
 
   @override
-  _i2.SharedPreferences get prefs =>
-      (super.noSuchMethod(
-            Invocation.getter(#prefs),
-            returnValue: _FakeSharedPreferences_0(
-              this,
-              Invocation.getter(#prefs),
-            ),
-          )
-          as _i2.SharedPreferences);
+  _i2.SharedPreferences get prefs => (super.noSuchMethod(
+        Invocation.getter(#prefs),
+        returnValue: _FakeSharedPreferences_0(
+          this,
+          Invocation.getter(#prefs),
+        ),
+      ) as _i2.SharedPreferences);
 
   @override
-  _i4.Future<bool> setString(String? key, String? value) =>
-      (super.noSuchMethod(
-            Invocation.method(#setString, [key, value]),
-            returnValue: _i4.Future<bool>.value(false),
-          )
-          as _i4.Future<bool>);
+  _i4.Future<bool> setString(String? key, String? value) => (super.noSuchMethod(
+        Invocation.method(#setString, [key, value]),
+        returnValue: _i4.Future<bool>.value(false),
+      ) as _i4.Future<bool>);
 
   @override
   String? getString(String? key) =>

@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:cross_platform_product_listing_assessment/features/products/data/repos/products_repo.dart';
+import 'package:cross_platform_product_listing_assessment/data/repos/products_repo.dart';
 import 'package:equatable/equatable.dart';
 
 import '../../data/models/product_model.dart';
