@@ -19,6 +19,7 @@ class ProductsCubit extends Cubit<ProductsState> {
 
     if (result != null) {
       emit(ProductsState.success(result));
+      return;
     }
 
     emit(ProductsState.error());
