@@ -6,7 +6,11 @@ import 'package:cross_platform_product_listing_assessment/core/constants.dart';
 
 import '../models/product_model.dart';
 
-abstract class ProductsRepo {
+class ProductsRepo {
+  final http.Client client;
+
+  ProductsRepo(this.client);
+
   /// Fetches a list of products from the server.
   ///
   /// Sends a GET request to the products endpoint defined in [Constants.baseUrl].
@@ -15,11 +19,11 @@ abstract class ProductsRepo {
   ///
   /// Returns a `Future` containing a list of [ProductModel] objects on success,
   /// or `null` if the request fails or an exception occurs.
-  static Future<List<ProductModel>?> getProducts() async {
+  Future<List<ProductModel>?> getProducts() async {
     final Uri url = Uri.parse('${Constants.baseUrl}/products');
 
     try {
-      final result = await http.get(url);
+      final result = await client.get(url);
 
       if (result.statusCode == 200 || result.statusCode == 201) {
         final List<dynamic> decodedBody = jsonDecode(result.body);
