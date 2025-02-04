@@ -1,6 +1,11 @@
+import 'package:cross_platform_product_listing_assessment/core/di.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  setupGetIt();
+
   runApp(const MainApp());
 }
 
