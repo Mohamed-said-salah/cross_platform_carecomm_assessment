@@ -5,6 +5,8 @@ import 'package:get_it/get_it.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../features/favourites/services/favorites_caching_service.dart';
+
 final GetIt getIt = GetIt.instance;
 
 void setupGetIt() async {
@@ -22,4 +24,8 @@ void setupGetIt() async {
 
   // cache manager
   getIt.registerLazySingleton<CacheManager>(() => CacheManager(prefs));
+
+  // favorites caching service
+  getIt.registerLazySingleton<FavoritesCachingService>(
+      () => FavoritesCachingService(getIt<CacheManager>()));
 }
