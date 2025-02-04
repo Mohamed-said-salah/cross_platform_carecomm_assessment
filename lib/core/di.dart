@@ -1,5 +1,5 @@
 import 'package:cross_platform_product_listing_assessment/core/cache_manager.dart';
-import 'package:cross_platform_product_listing_assessment/data/repos/products_repo.dart';
+import 'package:cross_platform_product_listing_assessment/features/products/data/repos/products_repo.dart';
 import 'package:get_it/get_it.dart';
 
 import 'package:http/http.dart' as http;

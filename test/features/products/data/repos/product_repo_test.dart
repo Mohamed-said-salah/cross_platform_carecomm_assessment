@@ -1,4 +1,4 @@
-import 'package:cross_platform_product_listing_assessment/data/repos/products_repo.dart';
+import 'package:cross_platform_product_listing_assessment/features/products/data/repos/products_repo.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:mockito/annotations.dart';

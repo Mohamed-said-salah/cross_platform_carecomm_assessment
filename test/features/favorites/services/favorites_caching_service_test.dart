@@ -6,7 +6,7 @@ import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 
 import 'package:cross_platform_product_listing_assessment/core/cache_manager.dart';
-import 'package:cross_platform_product_listing_assessment/data/models/product_model.dart';
+import 'package:cross_platform_product_listing_assessment/features/products/data/models/product_model.dart';
 import 'package:cross_platform_product_listing_assessment/core/constants.dart';
 
 // Generate a mock class for CacheManager
