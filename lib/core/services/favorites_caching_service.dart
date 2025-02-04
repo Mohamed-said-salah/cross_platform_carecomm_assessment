@@ -32,7 +32,7 @@ class FavoritesCachingService {
   ///
   /// Returns a `Future` containing the list of favorite products, or `null` if
   /// the cache is empty.
-  Future<List<ProductModel>?> _readFavoriteProductsFromCache() async {
+  Future<List<ProductModel>?> getFavoriteProductsFromCache() async {
     String? productsJson = cacheManager.getString(Constants.favoritesKey);
     if (productsJson == null) {
       return null;
@@ -45,7 +45,7 @@ class FavoritesCachingService {
     List<ProductModel> products =
         productsMap.map((product) => ProductModel.fromJson(product)).toList();
 
-    return products;
+    return List<ProductModel>.from(products.reversed);
   }
 
   /// Adds the given product to the list of favorite products in the cache.
@@ -56,7 +56,7 @@ class FavoritesCachingService {
   /// Returns a `Future` containing a boolean indicating whether the write was
   /// successful.
   Future<bool> addFavoriteProduct(ProductModel product) async {
-    List<ProductModel>? products = await _readFavoriteProductsFromCache();
+    List<ProductModel>? products = await getFavoriteProductsFromCache();
 
     products ??= [];
 
@@ -70,7 +70,7 @@ class FavoritesCachingService {
   /// Returns a `Future` containing the favorite product with the given ID, or
   /// `null` if the cache is empty or no product with the given ID is found.
   Future<ProductModel?> getFavoriteProductById(int productId) async {
-    List<ProductModel>? products = await _readFavoriteProductsFromCache();
+    List<ProductModel>? products = await getFavoriteProductsFromCache();
 
     if (products == null) {
       return null;
@@ -91,7 +91,7 @@ class FavoritesCachingService {
   /// Returns a `Future` containing a boolean indicating whether the write was
   /// successful.
   Future<bool> removeFavoriteProduct(ProductModel product) async {
-    List<ProductModel>? products = await _readFavoriteProductsFromCache();
+    List<ProductModel>? products = await getFavoriteProductsFromCache();
 
     if (products == null) {
       return false;
