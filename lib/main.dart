@@ -6,6 +6,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:path_provider/path_provider.dart';
 
+import 'views/components/buttons/animated_theme_switcher.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -36,15 +38,7 @@ class MainApp extends StatelessWidget {
             darkTheme: ThemeData.dark(),
             home: Scaffold(
               body: Center(
-                child: BlocBuilder<ThemeCubit, ThemeMode>(
-                  builder: (context, themeMode) {
-                    return Switch(
-                      value: themeMode == ThemeMode.dark,
-                      onChanged: (value) =>
-                          context.read<ThemeCubit>().toggleTheme(),
-                    );
-                  },
-                ),
+                child: AnimatedThemeSwitcher(),
               ),
             ),
           );
