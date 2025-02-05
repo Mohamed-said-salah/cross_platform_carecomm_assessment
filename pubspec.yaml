@@ -22,6 +22,7 @@ dependencies:
     flutter_screenutil: ^5.9.3
     auto_route: ^9.3.0+1
     fast_cached_network_image: ^1.2.9
+    skeletonizer: ^1.4.3
 
 dev_dependencies:
     flutter_test:
