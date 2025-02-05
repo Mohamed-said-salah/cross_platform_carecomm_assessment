@@ -21,14 +21,14 @@ class ResponsiveManager {
     }
   }
 
-  T responsiveValue<T>(T mobile, T tablet, T desktop) {
+  T responsiveValue<T>(T mobile, T? tablet, T? desktop) {
     switch (getDeviceType()) {
       case DeviceScreenType.mobile:
         return mobile;
       case DeviceScreenType.tablet:
-        return tablet;
+        return tablet ?? mobile;
       case DeviceScreenType.desktop:
-        return desktop;
+        return desktop ?? tablet ?? mobile;
     }
   }
 }
