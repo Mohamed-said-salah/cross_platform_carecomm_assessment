@@ -23,7 +23,9 @@ class AnimatedThemeSwitcher extends StatelessWidget {
           key: ValueKey<bool>(
               isDarkMode), // Key helps AnimatedSwitcher know the state change
           size: 120.r,
-          color: isDarkMode ? Colors.amber : Colors.blueGrey,
+          color: isDarkMode
+              ? Colors.amber
+              : const Color.fromARGB(255, 81, 105, 117),
         ),
       ),
     );
