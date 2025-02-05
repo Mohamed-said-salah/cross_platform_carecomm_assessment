@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../logic/cubit/theme_cubit.dart';
 
@@ -21,7 +22,7 @@ class AnimatedThemeSwitcher extends StatelessWidget {
           isDarkMode ? Icons.light_mode : Icons.dark_mode,
           key: ValueKey<bool>(
               isDarkMode), // Key helps AnimatedSwitcher know the state change
-          size: 32,
+          size: 120.r,
           color: isDarkMode ? Colors.amber : Colors.blueGrey,
         ),
       ),
