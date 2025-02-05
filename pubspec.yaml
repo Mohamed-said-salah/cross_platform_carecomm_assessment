@@ -17,6 +17,7 @@ dependencies:
     shared_preferences: ^2.5.1
     flutter_bloc: ^9.0.0
     bloc_test: ^10.0.0
+    hydrated_bloc: ^10.0.0
 
 dev_dependencies:
     flutter_test:
