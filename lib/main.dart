@@ -68,8 +68,14 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: AnimatedThemeSwitcher(),
+      appBar: AppBar(
+        title: Text("CareComm Task"),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12),
+            child: AnimatedThemeSwitcher(),
+          ),
+        ],
       ),
     );
   }
