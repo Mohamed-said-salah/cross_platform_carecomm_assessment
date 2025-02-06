@@ -77,7 +77,7 @@ class _ProductFavoriteButtonState extends State<ProductFavoriteButton> {
           duration: const Duration(milliseconds: 300),
           builder: (context, color, child) => Icon(
             isFavorite ? Icons.favorite : Icons.favorite_border,
-            size: ResponsiveManager(context).responsiveValue(32.r, 40.r, 30.r),
+            size: ResponsiveManager(context).responsiveValue(29.w, 28.w, 32.w),
             color: color,
           ),
         ),
