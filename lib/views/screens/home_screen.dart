@@ -40,9 +40,9 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         toolbarHeight: ResponsiveManager(context).responsiveValue(
-          80.h,
-          100.h,
-          100.h,
+          80.w,
+          100.w,
+          100.w,
         ),
         actions: [
           Padding(
