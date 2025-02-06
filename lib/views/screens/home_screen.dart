@@ -39,11 +39,10 @@ class _HomeScreenState extends State<HomeScreen> {
             TextStyles.titleDesktop,
           ),
         ),
-        toolbarHeight: ResponsiveManager(context).responsiveValue(
-          80.w,
-          100.w,
-          100.w,
-        ),
+        toolbarHeight:
+            ResponsiveManager(context).responsiveValue(80.w, 100.w, 100.w),
+        scrolledUnderElevation: 0,
+        elevation: 0,
         actions: [
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 12.w),
@@ -89,10 +88,11 @@ class _HomeScreenState extends State<HomeScreen> {
 
   GridView tabletView(ProductsSuccess state) {
     return GridView.builder(
+      padding: EdgeInsets.only(top: 5.w, right: 10.w, left: 10.w),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        mainAxisSpacing: 1,
-        crossAxisSpacing: 4,
+        mainAxisSpacing: 20,
+        crossAxisSpacing: 20,
         childAspectRatio: 1.14,
       ),
       itemCount: state.products.length,
@@ -104,10 +104,11 @@ class _HomeScreenState extends State<HomeScreen> {
 
   GridView desktopView(ProductsSuccess state) {
     return GridView.builder(
+      padding: EdgeInsets.only(top: 5.w, right: 10.w, left: 10.w),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 3,
-        mainAxisSpacing: 6,
-        crossAxisSpacing: 4,
+        mainAxisSpacing: 20,
+        crossAxisSpacing: 20,
         childAspectRatio: 1.115,
       ),
       itemCount: state.products.length,
