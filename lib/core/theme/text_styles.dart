@@ -13,21 +13,21 @@ abstract class TextStyles {
   static final headerMobile =
       TextStyle(fontSize: 20.sp, fontWeight: FontWeight.bold);
   static final headerTablet =
-      TextStyle(fontSize: 26.sp, fontWeight: FontWeight.w800);
+      TextStyle(fontSize: 25.sp, fontWeight: FontWeight.bold);
   static final headerDesktop =
-      TextStyle(fontSize: 25.sp, fontWeight: FontWeight.w800);
+      TextStyle(fontSize: 25.sp, fontWeight: FontWeight.bold);
 
   static final bodyMediumMobile =
       TextStyle(fontSize: 17.sp, fontWeight: FontWeight.w600);
   static final bodyMediumTablet =
-      TextStyle(fontSize: 22.sp, fontWeight: FontWeight.bold);
+      TextStyle(fontSize: 21.sp, fontWeight: FontWeight.bold);
   static final bodyMediumDesktop =
       TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold);
 
   static final bodySmallMobile =
       TextStyle(fontSize: 15.sp, fontWeight: FontWeight.w500);
   static final bodySmallTablet =
-      TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w600);
+      TextStyle(fontSize: 19.sp, fontWeight: FontWeight.w600);
   static final bodySmallDesktop =
       TextStyle(fontSize: 15.sp, fontWeight: FontWeight.w600);
 }
