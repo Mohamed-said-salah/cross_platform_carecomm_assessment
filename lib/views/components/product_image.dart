@@ -13,16 +13,16 @@ class ProductImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: width ??
-          ResponsiveManager(context).responsiveValue(90.w, 120.w, 160.w),
+          ResponsiveManager(context).responsiveValue(90.w, 320.w, 380.w),
       height: height ??
-          ResponsiveManager(context).responsiveValue(90.w, 120.w, 160.w),
+          ResponsiveManager(context).responsiveValue(90.w, 200.w, 240.w),
       child: FastCachedImage(
         url: url,
         loadingBuilder: (p0, p1) => Container(
           width: width ??
-              ResponsiveManager(context).responsiveValue(90.w, 120.w, 160.w),
+              ResponsiveManager(context).responsiveValue(90.w, 320.w, 380.w),
           height: height ??
-              ResponsiveManager(context).responsiveValue(90.w, 120.w, 160.w),
+              ResponsiveManager(context).responsiveValue(90.w, 200.w, 240.w),
         ),
         fit: BoxFit.fitHeight,
       ),
