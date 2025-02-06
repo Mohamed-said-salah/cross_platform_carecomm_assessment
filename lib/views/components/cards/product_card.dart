@@ -3,6 +3,7 @@ import 'package:cross_platform_product_listing_assessment/core/theme/text_styles
 import 'package:cross_platform_product_listing_assessment/data/models/product_model.dart';
 import 'package:cross_platform_product_listing_assessment/views/components/buttons/product_favorite_button.dart';
 import 'package:cross_platform_product_listing_assessment/views/components/product_image.dart';
+import 'package:cross_platform_product_listing_assessment/views/components/spaces/horizontal_space.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -39,10 +40,10 @@ class ProductCard extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             ProductImage(url: product.image ?? ""),
-            SizedBox(height: 50.h),
+            Spacer(),
             Row(
               children: [
-                Flexible(
+                Expanded(
                   child: Text(
                     product.title ?? "",
                     overflow: TextOverflow.ellipsis,
@@ -53,7 +54,7 @@ class ProductCard extends StatelessWidget {
                     ),
                   ),
                 ),
-                Spacer(),
+                HorizontalSpace(),
                 Text(
                   "EGP ${product.price ?? "0.00"}",
                   overflow: TextOverflow.ellipsis,
