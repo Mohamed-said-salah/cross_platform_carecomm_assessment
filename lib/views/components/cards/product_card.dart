@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:cross_platform_product_listing_assessment/core/theme/responsive_manager.dart';
 import 'package:cross_platform_product_listing_assessment/core/theme/text_styles.dart';
 import 'package:cross_platform_product_listing_assessment/data/models/product_model.dart';
@@ -6,6 +7,8 @@ import 'package:cross_platform_product_listing_assessment/views/components/produ
 import 'package:cross_platform_product_listing_assessment/views/components/spaces/horizontal_space.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../core/router/app_router.gr.dart';
 
 class ProductCard extends StatelessWidget {
   final ProductModel product;
@@ -19,7 +22,7 @@ class ProductCard extends StatelessWidget {
       splashColor: Colors.transparent,
       borderRadius: BorderRadius.circular(20.r),
       onTap: () {
-        // todo: navigate to product details screen
+        context.router.push(ProductDetailsRoute());
       },
       child: Ink(
         padding: const EdgeInsets.all(20),

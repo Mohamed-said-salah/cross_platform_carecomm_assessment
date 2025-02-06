@@ -1,3 +1,5 @@
+import 'package:auto_route/auto_route.dart';
+import 'package:cross_platform_product_listing_assessment/core/router/app_router.gr.dart';
 import 'package:cross_platform_product_listing_assessment/data/models/product_model.dart';
 import 'package:cross_platform_product_listing_assessment/views/components/buttons/product_favorite_button.dart';
 import 'package:cross_platform_product_listing_assessment/views/components/product_image.dart';
@@ -20,7 +22,7 @@ class ProductTile extends StatelessWidget {
       focusColor: Colors.transparent,
       splashColor: Colors.transparent,
       onTap: () {
-        // todo: navigate to product details screen
+        context.router.push(ProductDetailsRoute());
       },
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
