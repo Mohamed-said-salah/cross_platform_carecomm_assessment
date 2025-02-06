@@ -101,4 +101,18 @@ class FavoritesCachingService {
 
     return _writeFavoriteProductsToCache(products);
   }
+
+  /// Tests whether the given product is in the list of favorite products in the cache.
+  ///
+  /// Returns a `Future` containing a boolean indicating whether the product is in
+  /// the list of favorite products.
+  Future<bool> isFavoriteProduct(ProductModel product) async {
+    List<ProductModel>? products = await getFavoriteProductsFromCache();
+
+    if (products == null) {
+      return false;
+    }
+
+    return products.any((p) => p.id == product.id);
+  }
 }
