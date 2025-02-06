@@ -93,5 +93,44 @@ void main() {
       // Assert
       expect(result, false);
     });
+
+    test('isFavoriteProduct should return true if product exists in cache',
+        () async {
+      // Arrange
+      final productsJson = jsonEncode([product1.toJson(), product2.toJson()]);
+      when(mockCacheManager.getString(favoritesKey)).thenReturn(productsJson);
+
+      // Act
+      final result = await favoritesCachingService.isFavoriteProduct(product1);
+
+      // Assert
+      expect(result, true);
+    });
+
+    test(
+        'isFavoriteProduct should return false if product does not exist in cache',
+        () async {
+      // Arrange
+      final productsJson =
+          jsonEncode([product2.toJson()]); // Only product2 in cache
+      when(mockCacheManager.getString(favoritesKey)).thenReturn(productsJson);
+
+      // Act
+      final result = await favoritesCachingService.isFavoriteProduct(product1);
+
+      // Assert
+      expect(result, false);
+    });
+
+    test('isFavoriteProduct should return false if cache is empty', () async {
+      // Arrange
+      when(mockCacheManager.getString(favoritesKey)).thenReturn(null);
+
+      // Act
+      final result = await favoritesCachingService.isFavoriteProduct(product1);
+
+      // Assert
+      expect(result, false);
+    });
   });
 }

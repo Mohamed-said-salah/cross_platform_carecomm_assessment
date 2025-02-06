@@ -83,4 +83,12 @@ class MockFavoritesCachingService extends _i1.Mock
             returnValue: _i4.Future<bool>.value(false),
           )
           as _i4.Future<bool>);
+
+  @override
+  _i4.Future<bool> isFavoriteProduct(_i5.ProductModel? product) =>
+      (super.noSuchMethod(
+            Invocation.method(#isFavoriteProduct, [product]),
+            returnValue: _i4.Future<bool>.value(false),
+          )
+          as _i4.Future<bool>);
 }
