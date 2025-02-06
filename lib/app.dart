@@ -19,9 +19,9 @@ class App extends StatelessWidget {
       builder: (context, mode) {
         return ScreenUtilInit(
           designSize: ResponsiveManager(context).responsiveValue(
-            Size(1344, 2992),
-            Size(1344, 2992),
-            Size(1344, 2992),
+            Size(448, 997),
+            Size(800, 1280),
+            Size(1512, 781),
           ),
           minTextAdapt: true,
           splitScreenMode: false,
