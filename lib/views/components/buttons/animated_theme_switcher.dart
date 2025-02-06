@@ -1,3 +1,4 @@
+import 'package:cross_platform_product_listing_assessment/core/theme/responsive_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -22,7 +23,7 @@ class AnimatedThemeSwitcher extends StatelessWidget {
           isDarkMode ? Icons.light_mode : Icons.dark_mode,
           key: ValueKey<bool>(
               isDarkMode), // Key helps AnimatedSwitcher know the state change
-          size: 120.r,
+          size: ResponsiveManager(context).responsiveValue(30.r, 80.r, 120.r),
           color: isDarkMode
               ? Colors.amber
               : const Color.fromARGB(255, 81, 105, 117),
