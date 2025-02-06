@@ -23,7 +23,7 @@ class AnimatedThemeSwitcher extends StatelessWidget {
           isDarkMode ? Icons.light_mode : Icons.dark_mode,
           key: ValueKey<bool>(
               isDarkMode), // Key helps AnimatedSwitcher know the state change
-          size: ResponsiveManager(context).responsiveValue(30.r, 80.r, 120.r),
+          size: ResponsiveManager(context).responsiveValue(30.r, 45.r, 55.r),
           color: isDarkMode
               ? Colors.amber
               : const Color.fromARGB(255, 81, 105, 117),
