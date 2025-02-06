@@ -1,5 +1,7 @@
 import 'package:cross_platform_product_listing_assessment/core/services/cache_manager.dart';
 import 'package:cross_platform_product_listing_assessment/data/repos/products_repo.dart';
+import 'package:cross_platform_product_listing_assessment/logic/cubit/favorites_cubit.dart';
+import 'package:cross_platform_product_listing_assessment/logic/cubit/products_cubit.dart';
 import 'package:get_it/get_it.dart';
 
 import 'package:http/http.dart' as http;
@@ -28,4 +30,12 @@ void setupGetIt() async {
   // favorites caching service
   getIt.registerLazySingleton<FavoritesCachingService>(
       () => FavoritesCachingService(getIt<CacheManager>()));
+
+  // Products Cubit
+  getIt.registerLazySingleton<ProductsCubit>(
+      () => ProductsCubit(getIt<ProductsRepo>()));
+
+  // favorites cubit
+  getIt.registerLazySingleton<FavoritesCubit>(
+      () => FavoritesCubit(getIt<FavoritesCachingService>()));
 }
