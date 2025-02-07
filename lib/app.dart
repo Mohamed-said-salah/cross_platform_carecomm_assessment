@@ -1,7 +1,7 @@
 import 'package:cross_platform_product_listing_assessment/core/router/app_router.dart';
 import 'package:cross_platform_product_listing_assessment/core/theme/responsive_manager.dart';
 import 'package:cross_platform_product_listing_assessment/logic/cubit/theme_cubit.dart';
-import 'package:cross_platform_product_listing_assessment/views/screens/home_screen.dart';
+import 'package:cross_platform_product_listing_assessment/views/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
