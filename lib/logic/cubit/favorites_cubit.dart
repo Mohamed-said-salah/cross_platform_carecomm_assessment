@@ -8,7 +8,8 @@ part 'favorites_state.dart';
 class FavoritesCubit extends Cubit<FavoritesState> {
   final FavoritesCachingService favoritesCachingService;
 
-  FavoritesCubit(this.favoritesCachingService) : super(FavoritesInitial());
+  FavoritesCubit(this.favoritesCachingService)
+      : super(FavoritesState.initial());
 
   /// Fetches the list of favorite products from the cache.
   ///
