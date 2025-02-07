@@ -47,3 +47,5 @@ app.*.map.json
 
 # custom ignores
 pubspec.lock
+
+/docs
