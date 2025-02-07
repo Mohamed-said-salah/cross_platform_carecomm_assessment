@@ -22,7 +22,7 @@ class ProductTile extends StatelessWidget {
       focusColor: Colors.transparent,
       splashColor: Colors.transparent,
       onTap: () {
-        context.router.push(ProductDetailsRoute());
+        context.router.push(ProductDetailsRoute(product: product));
       },
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,

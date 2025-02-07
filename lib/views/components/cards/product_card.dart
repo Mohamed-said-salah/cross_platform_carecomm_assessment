@@ -22,7 +22,7 @@ class ProductCard extends StatelessWidget {
       splashColor: Colors.transparent,
       borderRadius: BorderRadius.circular(20.r),
       onTap: () {
-        context.router.push(ProductDetailsRoute());
+        context.router.push(ProductDetailsRoute(product: product));
       },
       child: Ink(
         padding: const EdgeInsets.all(20),
