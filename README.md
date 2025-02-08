@@ -143,19 +143,20 @@ dark mode
   <img height="460px" src="https://github.com/user-attachments/assets/1c86bb15-0cf9-4975-a4ff-10479ef54d8f">
 <hr/>
 </div>
+
 ### Mobile
+
 <div align='center'>
-  <img height="460px" src="https://github.com/user-attachments/assets/9cfb6b31-2c9c-408b-9ebc-89f89c849abd">
-  <img height="460px" src="https://github.com/user-attachments/assets/3ce7c6ad-b33b-464c-84a7-db8a50b56f72">
-  <img height="460px" src="https://github.com/user-attachments/assets/d35fda79-fedb-410a-a9d5-57220b257f9c">
-  <img height="460px" src="https://github.com/user-attachments/assets/7d76812b-5e96-454f-bb03-fd96b18ed184">
+  <img height="460px" src="https://github.com/user-attachments/assets/5d917e2e-7707-4be6-afd0-4af7187a2d7f">
+  <img height="460px" src="https://github.com/user-attachments/assets/418f7e12-daf3-4a73-af62-5fdd057d7020">
+  <img height="460px" src="https://github.com/user-attachments/assets/354b9cda-38b3-4149-8c07-af47f7f6c70c">
 <hr/>
 </div>
 dark mode
 <div align='center'>
-  <img height="460px" src="https://github.com/user-attachments/assets/9cfb6b31-2c9c-408b-9ebc-89f89c849abd">
-  <img height="460px" src="https://github.com/user-attachments/assets/3ce7c6ad-b33b-464c-84a7-db8a50b56f72">
-  <img height="460px" src="https://github.com/user-attachments/assets/d35fda79-fedb-410a-a9d5-57220b257f9c">
+  <img height="460px" src="https://github.com/user-attachments/assets/2a06ac7c-b8e0-4eea-a0b3-84c61246a722">
+  <img height="460px" src="https://github.com/user-attachments/assets/f1fb10ca-28f1-4478-9221-72e1a3bc17f0">
+  <img height="460px" src="https://github.com/user-attachments/assets/94ef7910-d639-4f61-be0c-281bdeca25c7">
 <hr/>
 </div>
 ### Tablet
