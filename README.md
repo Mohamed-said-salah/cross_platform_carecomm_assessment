@@ -135,12 +135,12 @@ Prerequisites
 ### Web
 
 <div align='center'>
-  <img height="230px" src="https://github.com/user-attachments/assets/134247c7-7bdb-4e63-a1f5-5ff5b1cbcbdf">
+  <img height="460px" src="https://github.com/user-attachments/assets/134247c7-7bdb-4e63-a1f5-5ff5b1cbcbdf">
 <hr/>
 </div>
 dark mode
 <div align='center'>
-  <img height="230px" src="https://github.com/user-attachments/assets/1c86bb15-0cf9-4975-a4ff-10479ef54d8f">
+  <img height="460px" src="https://github.com/user-attachments/assets/1c86bb15-0cf9-4975-a4ff-10479ef54d8f">
 <hr/>
 </div>
 ### Mobile
