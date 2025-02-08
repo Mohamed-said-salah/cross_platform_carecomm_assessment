@@ -19,12 +19,16 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
+    // <--- Build a default [TabBarView] for the products and favorites tabs.
     return DefaultTabController(
       length: 2,
       child: Scaffold(
+        // <--- Display sliver app bar and body.
         body: NestedScrollView(
           headerSliverBuilder: (context, innerBoxIsScrolled) => [
+            // <--- Display the app bar.
             SliverAppBar(
+              // <--- Display the app bar title.
               title: Text(
                 "CareComm Task",
                 style: ResponsiveManager(context).responsiveValue(
@@ -40,16 +44,20 @@ class _HomeScreenState extends State<HomeScreen> {
               scrolledUnderElevation: 0,
               elevation: 0,
               actions: [
+                // <--- Display the theme switcher. --->
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 12.w),
                   child: AnimatedThemeSwitcher(),
                 ),
               ],
+              // <--- Display the tab bar. --->
               bottom: TabBar(
+                // <--- Display the tabs.
                 tabs: const [
                   Tab(text: "Products"),
                   Tab(text: "Favorites"),
                 ],
+                // <--- Set the indicator color, label color, label style, padding, unselected label color, indicator size, indicator padding, and indicator weight.
                 indicatorColor: Theme.of(context).brightness == Brightness.light
                     ? Colors.black
                     : Colors.grey,
@@ -72,9 +80,12 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           ],
+          // <--- Display the tab bar view. --->
           body: TabBarView(
             children: [
+              // <--- Display the products fetched from api --->
               ProductsTab(),
+              // <--- Display the favorites from local storage --->
               FavoritesTab(),
             ],
           ),
