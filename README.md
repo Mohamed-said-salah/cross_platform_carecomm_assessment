@@ -134,7 +134,7 @@ Prerequisites
 ## ScreenShots 🖼️
 ### Web
 <div align='center'>
-  <img height="460px" src="https://github.com/user-attachments/assets/9cfb6b31-2c9c-408b-9ebc-89f89c849abd">
+  <img height="460px" src="https://github.com/user-attachments/assets/134247c7-7bdb-4e63-a1f5-5ff5b1cbcbdf">
   <img height="460px" src="https://github.com/user-attachments/assets/3ce7c6ad-b33b-464c-84a7-db8a50b56f72">
   <img height="460px" src="https://github.com/user-attachments/assets/d35fda79-fedb-410a-a9d5-57220b257f9c">
 <hr/>
