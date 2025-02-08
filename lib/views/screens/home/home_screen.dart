@@ -18,69 +18,66 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   @override
-  void initState() {
-    super.initState();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            "CareComm Task",
-            style: ResponsiveManager(context).responsiveValue(
-              TextStyles.titleMobile,
-              TextStyles.titleTablet,
-              TextStyles.titleDesktop,
-            ),
-          ),
-          leading: SizedBox(),
-          toolbarHeight:
-              ResponsiveManager(context).responsiveValue(80.w, 100.w, 100.w),
-          scrolledUnderElevation: 0,
-          elevation: 0,
-          actions: [
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 12.w),
-              child: AnimatedThemeSwitcher(),
-            ),
-          ],
-
-          // <--- Tab bar ---->
-          bottom: TabBar(
-            tabs: const [
-              Tab(text: "Products"),
-              Tab(text: "Favorites"),
-            ],
-            indicatorColor: Theme.of(context).brightness == Brightness.light
-                ? Colors.black
-                : Colors.grey,
-            labelColor: Theme.of(context).brightness == Brightness.light
-                ? Colors.black
-                : Colors.white,
-            labelStyle: TextStyle(
-              fontSize: 16.sp,
-              fontWeight: FontWeight.bold,
-              color: Colors.green,
-            ),
-            padding: EdgeInsets.only(bottom: 10.h),
-            unselectedLabelColor:
-                Theme.of(context).brightness == Brightness.light
+        body: NestedScrollView(
+          headerSliverBuilder: (context, innerBoxIsScrolled) => [
+            SliverAppBar(
+              title: Text(
+                "CareComm Task",
+                style: ResponsiveManager(context).responsiveValue(
+                  TextStyles.titleMobile,
+                  TextStyles.titleTablet,
+                  TextStyles.titleDesktop,
+                ),
+              ),
+              floating: true, // Makes the app bar hide/show on scroll
+              snap: true, // Makes the app bar snap into view when scrolling up
+              toolbarHeight: ResponsiveManager(context)
+                  .responsiveValue(80.w, 100.w, 100.w),
+              scrolledUnderElevation: 0,
+              elevation: 0,
+              actions: [
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 12.w),
+                  child: AnimatedThemeSwitcher(),
+                ),
+              ],
+              bottom: TabBar(
+                tabs: const [
+                  Tab(text: "Products"),
+                  Tab(text: "Favorites"),
+                ],
+                indicatorColor: Theme.of(context).brightness == Brightness.light
+                    ? Colors.black
+                    : Colors.grey,
+                labelColor: Theme.of(context).brightness == Brightness.light
                     ? Colors.black
                     : Colors.white,
-            indicatorSize: TabBarIndicatorSize.tab,
-            indicatorPadding: EdgeInsets.symmetric(horizontal: 15.w),
-            indicatorWeight: 5.h,
-            dividerColor: Colors.transparent,
-          ),
-        ),
-        body: TabBarView(
-          children: [
-            ProductsTab(),
-            FavoritesTab(),
+                labelStyle: TextStyle(
+                  fontSize: 16.sp,
+                  fontWeight: FontWeight.bold,
+                ),
+                padding: EdgeInsets.only(bottom: 10.h),
+                unselectedLabelColor:
+                    Theme.of(context).brightness == Brightness.light
+                        ? Colors.black
+                        : Colors.white,
+                indicatorSize: TabBarIndicatorSize.tab,
+                indicatorPadding: EdgeInsets.symmetric(horizontal: 15.w),
+                indicatorWeight: 5.h,
+                dividerColor: Colors.transparent,
+              ),
+            ),
           ],
+          body: TabBarView(
+            children: [
+              ProductsTab(),
+              FavoritesTab(),
+            ],
+          ),
         ),
       ),
     );
