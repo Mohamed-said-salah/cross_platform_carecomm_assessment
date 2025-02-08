@@ -133,14 +133,13 @@ Prerequisites
 
 ## ScreenShots 🖼️
 ### Web
-##### light mode
 <div align='center'>
   <img height="460px" src="https://github.com/user-attachments/assets/9cfb6b31-2c9c-408b-9ebc-89f89c849abd">
   <img height="460px" src="https://github.com/user-attachments/assets/3ce7c6ad-b33b-464c-84a7-db8a50b56f72">
   <img height="460px" src="https://github.com/user-attachments/assets/d35fda79-fedb-410a-a9d5-57220b257f9c">
 <hr/>
 </div>
-#### dark mode
+dark mode
 <div align='center'>
   <img height="460px" src="https://github.com/user-attachments/assets/9cfb6b31-2c9c-408b-9ebc-89f89c849abd">
   <img height="460px" src="https://github.com/user-attachments/assets/3ce7c6ad-b33b-464c-84a7-db8a50b56f72">
@@ -148,7 +147,6 @@ Prerequisites
 <hr/>
 </div>
 ### Mobile
-##### light mode
 <div align='center'>
   <img height="460px" src="https://github.com/user-attachments/assets/9cfb6b31-2c9c-408b-9ebc-89f89c849abd">
   <img height="460px" src="https://github.com/user-attachments/assets/3ce7c6ad-b33b-464c-84a7-db8a50b56f72">
@@ -156,7 +154,7 @@ Prerequisites
   <img height="460px" src="https://github.com/user-attachments/assets/7d76812b-5e96-454f-bb03-fd96b18ed184">
 <hr/>
 </div>
-#### dark mode
+dark mode
 <div align='center'>
   <img height="460px" src="https://github.com/user-attachments/assets/9cfb6b31-2c9c-408b-9ebc-89f89c849abd">
   <img height="460px" src="https://github.com/user-attachments/assets/3ce7c6ad-b33b-464c-84a7-db8a50b56f72">
@@ -164,7 +162,6 @@ Prerequisites
 <hr/>
 </div>
 ### Tablet
-##### light mode
 <div align='center'>
   <img height="460px" src="https://github.com/user-attachments/assets/9cfb6b31-2c9c-408b-9ebc-89f89c849abd">
   <img height="460px" src="https://github.com/user-attachments/assets/3ce7c6ad-b33b-464c-84a7-db8a50b56f72">
@@ -172,7 +169,7 @@ Prerequisites
   <img height="460px" src="https://github.com/user-attachments/assets/7d76812b-5e96-454f-bb03-fd96b18ed184">
 <hr/>
 </div>
-#### dark mode
+dark mode
 <div align='center'>
   <img height="460px" src="https://github.com/user-attachments/assets/9cfb6b31-2c9c-408b-9ebc-89f89c849abd">
   <img height="460px" src="https://github.com/user-attachments/assets/3ce7c6ad-b33b-464c-84a7-db8a50b56f72">
