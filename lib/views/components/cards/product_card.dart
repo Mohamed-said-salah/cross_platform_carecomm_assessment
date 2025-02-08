@@ -12,6 +12,12 @@ import '../../../core/router/app_router.gr.dart';
 
 class ProductCard extends StatelessWidget {
   final ProductModel product;
+
+  /// Builds a [ProductCard] with the given [product].
+  ///
+  /// The [product] parameter is required and represents the product to be displayed in the card.
+  ///
+  /// Returns a [ProductCard] widget.
   const ProductCard({super.key, required this.product});
 
   @override
@@ -21,6 +27,8 @@ class ProductCard extends StatelessWidget {
       focusColor: Colors.transparent,
       splashColor: Colors.transparent,
       borderRadius: BorderRadius.circular(20.r),
+
+      // <--- Navigate to the product details screen when tapped.
       onTap: () {
         context.router.push(ProductDetailsRoute(product: product));
       },
@@ -42,10 +50,15 @@ class ProductCard extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: [
+            // <--- Display the product image --->
             ProductImage(url: product.image ?? ""),
+
             Spacer(),
+
+            // <--- Display the product details --->
             Row(
               children: [
+                // <--- Display the product title --->
                 Expanded(
                   child: Text(
                     product.title ?? "",
@@ -58,6 +71,8 @@ class ProductCard extends StatelessWidget {
                   ),
                 ),
                 HorizontalSpace(),
+
+                // <--- Display the product price --->
                 Text(
                   "EGP ${product.price ?? "0.00"}",
                   overflow: TextOverflow.ellipsis,
@@ -70,6 +85,8 @@ class ProductCard extends StatelessWidget {
               ],
             ),
             SizedBox(height: 5.h),
+
+            // <--- Display the product rating --->
             Row(
               children: [
                 Text(
@@ -82,6 +99,8 @@ class ProductCard extends StatelessWidget {
                   ),
                 ),
                 Spacer(),
+
+                // <--- Display the favorite button --->
                 ProductFavoriteButton(product: product),
               ],
             )

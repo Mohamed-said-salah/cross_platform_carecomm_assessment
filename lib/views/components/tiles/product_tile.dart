@@ -13,6 +13,11 @@ import '../../../core/theme/text_styles.dart';
 
 class ProductTile extends StatelessWidget {
   final ProductModel product;
+
+  /// Creates a [ProductTile] widget.
+  ///
+  /// [product] - The product to display in the tile.
+  ///
   const ProductTile({super.key, required this.product});
 
   @override
@@ -27,25 +32,35 @@ class ProductTile extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // <--- Display the product image --->
           ProductImage(url: product.image ?? ""),
+
           HorizontalSpace(mobile: 10.w, tablet: 15.w, desktop: 20.w),
+
+          // <--- Display the product details --->
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 VerticalSpace(mobile: 10.h, tablet: 15.h, desktop: 20.h),
+
+                // <--- Display the product title --->
                 Text(
                   product.title ?? "",
                   overflow: TextOverflow.ellipsis,
                   style: TextStyles.headerMobile,
                 ),
                 VerticalSpace(mobile: 5.h, tablet: 10.h, desktop: 15.h),
+
+                // <--- Display the product price --->
                 Text(
                   "EGP ${product.price ?? "0.00"}",
                   overflow: TextOverflow.ellipsis,
                   style: TextStyles.bodySmallMobile,
                 ),
                 VerticalSpace(mobile: 5.h, tablet: 10.h, desktop: 15.h),
+
+                // <--- Display the product rating --->
                 Text(
                   "${product.rating?.count ?? ""} Likes",
                   overflow: TextOverflow.ellipsis,
@@ -54,6 +69,8 @@ class ProductTile extends StatelessWidget {
               ],
             ),
           ),
+
+          // <--- Display the favorite button --->
           ProductFavoriteButton(product: product),
         ],
       ),

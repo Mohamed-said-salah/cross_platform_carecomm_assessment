@@ -12,6 +12,15 @@ class ProductsCubit extends Cubit<ProductsState> {
 
   ProductsCubit(this.productsRepo) : super(ProductsState.initial());
 
+  /// Emits a [ProductsState.loading] state and then either a
+  /// [ProductsState.success] state or a [ProductsState.error] state,
+  /// depending on the result of calling [productsRepo.getProducts].
+  ///
+  /// If [productsRepo.getProducts] returns a non-null value, it
+  /// will be wrapped in a [ProductsState.success] state.
+  ///
+  /// If [productsRepo.getProducts] returns null, it will be wrapped
+  /// in a [ProductsState.error] state.
   void emitProductsState() async {
     emit(ProductsState.loading());
 
