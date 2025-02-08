@@ -43,7 +43,8 @@ CareComm Task is a cross-platform product listing application built using Flutte
  * Android Studio
 
 ## Get the App 📱
- * Android APK: [**Download from Google Drive**](https://drive.google.com/file/d/1-BTUUwfTQ6z0pbqbHpaM010r0GBQKT2g/view?usp=sharing)
+ * Android APK: [**Download from Google Drive**](https://drive.google.com/file/d/1-BTUUwfTQ6z0pbqbHpaM010r0GBQKT2g/view?usp=sharing) (may be not updated)
+ * APK Latest build: [**Direct Download APK Link**](https://github.com/Mohamed-said-salah/cross_platform_carecomm_assessment/actions/runs/13216267408/artifacts/2558668015)
  * Latest Build (Mobile APK) Download or Generate Latest from GitHub Actions Artifacts: [**Workflow Link**](https://github.com/Mohamed-said-salah/cross_platform_carecomm_assessment/actions/runs/13214215125)
  * Web Version: [**Open on GitHub Pages**](https://mohamed-said-salah.github.io/cross_platform_carecomm_assessment/)
 
