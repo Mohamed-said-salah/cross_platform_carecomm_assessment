@@ -78,6 +78,19 @@ Prerequisites
       flutter build apk --release
    ```
 
+## Running Tests 🧪
+To ensure the project functions correctly, you can run the unit and widget tests using the following commands:
+
+```bash
+   # Run all tests
+   flutter test
+```
+
+```bash
+   # Run tests with coverage report
+   flutter test --coverage
+```
+
 ## Project Structure
    ``` bash
       .
