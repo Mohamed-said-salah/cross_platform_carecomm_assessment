@@ -172,8 +172,8 @@ dark mode
 dark mode
 
 <div align='center'>
-  <img height="460px" src="https://github.com/user-attachments/assets/9cfb6b31-2c9c-408b-9ebc-89f89c849abd">
-  <img height="460px" src="https://github.com/user-attachments/assets/3ce7c6ad-b33b-464c-84a7-db8a50b56f72">
-  <img height="460px" src="https://github.com/user-attachments/assets/d35fda79-fedb-410a-a9d5-57220b257f9c">
+  <img height="460px" src="https://github.com/user-attachments/assets/a82026ac-d634-4205-aa9c-def372ac457b">
+  <img height="460px" src="https://github.com/user-attachments/assets/e302ed11-8473-4478-8823-57c0d6e927ca">
+  <img height="460px" src="https://github.com/user-attachments/assets/24786049-0a5b-4a2a-8102-3497c965c1d1">
 <hr/>
 </div>
