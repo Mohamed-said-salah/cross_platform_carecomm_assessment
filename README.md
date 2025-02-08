@@ -135,16 +135,12 @@ Prerequisites
 ### Web
 
 <div align='center'>
-  <img height="460px" src="https://github.com/user-attachments/assets/134247c7-7bdb-4e63-a1f5-5ff5b1cbcbdf">
-  <img height="460px" src="https://github.com/user-attachments/assets/9e13c791-f46b-441c-af64-00e796a6f735">
-  <img height="460px" src="https://github.com/user-attachments/assets/58097b0c-a471-44de-a76c-f48a29b261f8">
+  <img height="230px" src="https://github.com/user-attachments/assets/134247c7-7bdb-4e63-a1f5-5ff5b1cbcbdf">
 <hr/>
 </div>
 dark mode
 <div align='center'>
-  <img height="460px" src="https://github.com/user-attachments/assets/1c86bb15-0cf9-4975-a4ff-10479ef54d8f">
-  <img height="460px" src="https://github.com/user-attachments/assets/3c312ee6-e5fb-4e28-9cb7-5231dc0e081a">
-  <img height="460px" src="https://github.com/user-attachments/assets/0c365369-8f75-49bb-87af-f06419509a52">
+  <img height="230px" src="https://github.com/user-attachments/assets/1c86bb15-0cf9-4975-a4ff-10479ef54d8f">
 <hr/>
 </div>
 ### Mobile
