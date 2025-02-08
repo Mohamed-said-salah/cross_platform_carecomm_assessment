@@ -6,6 +6,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ProductFavoriteButton extends StatefulWidget {
+  /// Creates a [ProductFavoriteButton] widget.
+  ///
+  /// The [product] argument must not be null.
+  ///
+  /// Returns a [ProductFavoriteButton] widget.
+  ///
   const ProductFavoriteButton({
     super.key,
     required this.product,
@@ -55,6 +61,8 @@ class _ProductFavoriteButtonState extends State<ProductFavoriteButton> {
       isFavorite = !isFavorite;
     });
 
+    // <--- If the product is currently not a favorite, add it to the list of favorites.
+    // <--- If the product is currently a favorite, remove it from the list of favorites.
     if (isFavorite) {
       FavoritesCachingService(getIt()).addFavoriteProduct(widget.product);
     } else {
@@ -67,14 +75,21 @@ class _ProductFavoriteButtonState extends State<ProductFavoriteButton> {
     return IconButton(
       onPressed: _toggleFavorite,
       icon: AnimatedSwitcher(
+        // <--- Define the animation duration and transition builder.
         duration: const Duration(milliseconds: 220),
         transitionBuilder: (child, animation) =>
             ScaleTransition(scale: animation, child: child),
+
+        // <--- Display the favorite icon with the correct color.
         child: TweenAnimationBuilder<Color?>(
           key: ValueKey<bool>(isFavorite),
+
+          // <--- Define the animation duration and color tween.
           tween: ColorTween(
               begin: Colors.grey, end: isFavorite ? Colors.red : Colors.grey),
           duration: const Duration(milliseconds: 300),
+
+          // <--- Display the favorite icon with the correct color.
           builder: (context, color, child) => Icon(
             isFavorite ? Icons.favorite : Icons.favorite_border,
             size: ResponsiveManager(context).responsiveValue(31.w, 32.w, 32.w),
