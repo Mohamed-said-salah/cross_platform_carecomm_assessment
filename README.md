@@ -80,55 +80,55 @@ Prerequisites
 
 ## Project Structure
    ``` bash
-.
-└── lib/
-    ├── core/
-    │   ├── router/
-    │   │   └── app_router.dart
-    │   ├── services/
-    │   │   ├── cache_manager.dart
-    │   │   └── favorites_caching_service.dart
-    │   ├── theme/
-    │   │   ├── app_colors.dart
-    │   │   ├── responsive_manager.dart
-    │   │   └── text_styles.dart
-    │   ├── constants.dart
-    │   └── di.dart
-    ├── data/
-    │   ├── models/
-    │   │   └── product_model.dart
-    │   └── repos/
-    │       └── products_repo.dart
-    ├── logic/
-    │   ├── bloc
-    │   ├── cubit/
-    │   │   ├── theme_cubit.dart
-    │   │   ├── products_cubit.dart
-    │   │   ├── products_state.dart
-    │   │   ├── favorites_cubit.dart
-    │   │   └── favorites_state.dart
-    │   └── controllers
-    ├── views/
-    │   ├── components/
-    │   │   ├── buttons/
-    │   │   │   ├── animated_theme_switcher.dart
-    │   │   │   └── product_favorite_button.dart
-    │   │   ├── cards/
-    │   │   │   └── product_card.dart
-    │   │   ├── spaces/
-    │   │   │   ├── horizontal_space.dart
-    │   │   │   └── vertical_space.dart
-    │   │   ├── tiles/
-    │   │   │   └── product_tile.dart
-    │   │   └── product_image.dart
-    │   └── screens/
-    │       ├── home/
-    │       │   ├── home_screen.dart
-    │       │   ├── products_tab.dart
-    │       │   └── favorites_tab.dart
-    │       └── product_details_screen.dart
-    ├── app.dart
-    └── main.dart
+      .
+      └── lib/
+          ├── core/
+          │   ├── router/
+          │   │   └── app_router.dart
+          │   ├── services/
+          │   │   ├── cache_manager.dart
+          │   │   └── favorites_caching_service.dart
+          │   ├── theme/
+          │   │   ├── app_colors.dart
+          │   │   ├── responsive_manager.dart
+          │   │   └── text_styles.dart
+          │   ├── constants.dart
+          │   └── di.dart
+          ├── data/
+          │   ├── models/
+          │   │   └── product_model.dart
+          │   └── repos/
+          │       └── products_repo.dart
+          ├── logic/
+          │   ├── bloc
+          │   ├── cubit/
+          │   │   ├── theme_cubit.dart
+          │   │   ├── products_cubit.dart
+          │   │   ├── products_state.dart
+          │   │   ├── favorites_cubit.dart
+          │   │   └── favorites_state.dart
+          │   └── controllers
+          ├── views/
+          │   ├── components/
+          │   │   ├── buttons/
+          │   │   │   ├── animated_theme_switcher.dart
+          │   │   │   └── product_favorite_button.dart
+          │   │   ├── cards/
+          │   │   │   └── product_card.dart
+          │   │   ├── spaces/
+          │   │   │   ├── horizontal_space.dart
+          │   │   │   └── vertical_space.dart
+          │   │   ├── tiles/
+          │   │   │   └── product_tile.dart
+          │   │   └── product_image.dart
+          │   └── screens/
+          │       ├── home/
+          │       │   ├── home_screen.dart
+          │       │   ├── products_tab.dart
+          │       │   └── favorites_tab.dart
+          │       └── product_details_screen.dart
+          ├── app.dart
+          └── main.dart
    ```
 
 ## ScreenShots 🖼️
